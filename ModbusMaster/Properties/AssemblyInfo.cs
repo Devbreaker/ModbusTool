@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("ClassicDIY")]
 [assembly: AssemblyProduct("ModbusMaster")]
-[assembly: AssemblyCopyright("Copyright 2020 ClassicDIY (https://github.com/ClassicDIY/ModbusTool)")]
+[assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

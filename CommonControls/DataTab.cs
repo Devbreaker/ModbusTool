@@ -432,7 +432,7 @@ namespace Modbus.Common
                 try
                 {
                     var address = StartAddress;
-                    if (OnApply != null) OnApply(this, new EventArgs());
+                    OnApply?.Invoke(this, new EventArgs());
                     RefreshData();
                 }
                 catch (Exception)

@@ -13,6 +13,7 @@ namespace Modbus.Common
 {
     public partial class BaseForm : Form
     {
+        
         private DisplayFormat _displayFormat = DisplayFormat.Integer;
         private CommunicationMode _communicationMode = CommunicationMode.TCP;
         protected Socket _socket;
@@ -24,7 +25,7 @@ namespace Modbus.Common
         public BaseForm()
         {
             InitializeComponent();
-            _registerData = new ushort[65600];
+            _registerData = new ushort[100];
         }
 
         private void BaseFormLoading(object sender, EventArgs e)

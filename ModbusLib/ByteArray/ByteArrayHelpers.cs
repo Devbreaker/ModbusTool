@@ -88,6 +88,12 @@ namespace ModbusLib
                 result >>= 8;
                 result ^= CrcTable[temp];
             }
+            int icrc = 0xFFFF;
+            for (int i = 0; i < count; i++)
+            {
+                icrc = (icrc >> 8) ^ CrcTable[(icrc ^ buffer[i]) & 0xff];
+            }
+            byte[] ret = BitConverter.GetBytes(icrc);
 
             return result;
         }
